@@ -163,6 +163,9 @@ section p {
     text-align: left;
 }
 
+.indented {
+    padding-left: 30px;  /* Adjust the padding for indentation (e.g., 30px) */
+}
 .project-details h3 {
     margin-bottom: 10px;
 }
