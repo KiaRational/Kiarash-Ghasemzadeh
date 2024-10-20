@@ -1,26 +1,25 @@
-/* styles.css */
-
 body {
-    background-color: #121212;
-    color: #e0e0e0;
     font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1c1c1c;
-    padding: 20px;
+    background-color: #333;
+    color: #f5f5f5;
     text-align: center;
+    padding: 10px 0;
 }
 
 header h1 {
     margin: 0;
-    color: #e0e0e0;
+    font-size: 24px;
 }
 
 nav a {
-    color: #bb86fc;
+    color: #a073ff;
     margin: 0 15px;
     text-decoration: none;
 }
@@ -29,21 +28,43 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.sidebar {
+section {
     padding: 20px;
-    background-color: #1c1c1c;
-    width: 20%;
-    float: left;
+}
+
+#bio, #biography, #publications, #projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sidebar {
+    flex: 1 1 250px;
+    background-color: #282828;
+    padding: 20px;
     margin-right: 20px;
 }
 
 .sidebar img {
-    width: 100%;
-    border-radius: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    color: #a073ff;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.sidebar p {
+    font-size: 14px;
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -51,42 +72,85 @@ nav a:hover {
     margin: 10px 0;
 }
 
+.sidebar ul li::before {
+    content: "• ";
+    color: #a073ff;
+}
+
+#biography {
+    flex: 2 1 700px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#biography h2 {
+    font-size: 24px;
+    color: #a073ff;
+}
+
+#biography p {
+    line-height: 1.6;
+}
+
 #publications, #projects {
-    margin: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#publications h2, #projects h2 {
+    font-size: 24px;
+    color: #a073ff;
 }
 
 .publication-item, .project-item {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    background-color: #222;
     margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .publication-item img, .project-item img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
     margin-right: 20px;
 }
 
 .publication-details, .project-details {
-    display: inline-block;
+    flex-grow: 1;
+}
+
+.publication-details h3, .project-details h3 {
+    color: #a073ff;
+    margin: 0 0 10px 0;
+}
+
+.publication-details p, .project-details p {
+    font-size: 14px;
+    color: #ccc;
 }
 
 .icons a {
-    background-color: #bb86fc;
-    color: #121212;
+    background-color: #a073ff;
+    color: white;
     padding: 5px 10px;
-    margin: 5px;
+    margin-right: 10px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 .icons a:hover {
-    background-color: #3700b3;
+    background-color: #784de3;
 }
 
 footer {
-    background-color: #1c1c1c;
+    background-color: #333;
+    color: #f5f5f5;
     text-align: center;
-    padding: 10px;
-    color: #e0e0e0;
+    padding: 10px 0;
+    margin-top: 50px;
 }
+
