@@ -62,10 +62,6 @@ nav a:hover {
     margin: 10px 0;
 }
 
-.sidebar ul li::before {
-    content: ' ';
-}
-
 /* Main content styling */
 .main-content {
     margin-left: 270px; /* Offset by the sidebar width + padding */
@@ -82,10 +78,36 @@ section h2 {
     text-align: left; /* Left-align section headings */
 }
 
-section p, 
-.publication-item, 
-.project-item {
-    text-align: left; /* Left-align all text content within sections */
+section p {
+    text-align: left; /* Left-align paragraphs */
+}
+
+/* Left align publication items */
+.publication-item {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.publication-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.publication-details {
+    text-align: left;
+}
+
+.publication-details h3 {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
 }
 
 .icons a {
@@ -94,12 +116,34 @@ section p,
     padding: 5px;
     border: 1px solid #9e79d1;
     border-radius: 5px;
-    margin-right: 5px;
 }
 
 .icons a:hover {
     background-color: #9e79d1;
     color: #000;
+}
+
+/* Left align project items */
+.project-item {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.project-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-details {
+    text-align: left;
+}
+
+.project-details h3 {
+    margin-bottom: 10px;
 }
 
 /* Footer styling */
