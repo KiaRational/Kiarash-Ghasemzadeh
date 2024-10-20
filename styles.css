@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+nav a {
+    color: #bb86fc;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #1c1c1c;
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+#publications, #projects {
+    margin: 20px;
+}
+
+.publication-item, .project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.publication-item img, .project-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.publication-details, .project-details {
+    display: inline-block;
+}
+
+.icons a {
+    background-color: #bb86fc;
+    color: #121212;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.icons a:hover {
+    background-color: #3700b3;
+}
+
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 10px;
+    color: #e0e0e0;
+}
