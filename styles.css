@@ -42,10 +42,14 @@ section {
 }
 
 .sidebar {
-    flex: 1 1 250px;
+    width: 250px;
     background-color: #282828;
     padding: 20px;
-    margin-right: 20px;
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height */
+    overflow: auto; /* If content overflows, allow scrolling in the sidebar */
 }
 
 .sidebar img {
@@ -77,8 +81,13 @@ section {
     color: #a073ff;
 }
 
+.main-content {
+    flex: 1;
+    margin-left: 270px; /* Adjust for the sidebar width */
+    padding: 20px;
+}
+
 #biography {
-    flex: 2 1 700px;
     background-color: #222;
     padding: 20px;
     border-radius: 10px;
