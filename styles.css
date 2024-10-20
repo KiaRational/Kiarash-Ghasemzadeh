@@ -59,14 +59,14 @@ nav a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    height: calc(100% - 1px);
+    height: 100%;
     overflow-y: auto;
     transition: background-color 0.3s;  /* Add transition for smooth change */
 }
 
 .sidebar img {
     width: 50%;
-    margin: 0 70px;
+    margin: 80px 70px;
     border-radius: 250px;
 }
 
