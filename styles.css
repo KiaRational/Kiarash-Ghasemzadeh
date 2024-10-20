@@ -70,6 +70,7 @@ nav a:hover {
 .main-content {
     margin-left: 270px; /* Offset by the sidebar width + padding */
     padding: 20px;
+    text-align: left; /* Ensures left alignment of all text in main content */
 }
 
 section {
@@ -78,6 +79,13 @@ section {
 
 section h2 {
     color: #9e79d1;
+    text-align: left; /* Left-align section headings */
+}
+
+section p, 
+.publication-item, 
+.project-item {
+    text-align: left; /* Left-align all text content within sections */
 }
 
 .icons a {
