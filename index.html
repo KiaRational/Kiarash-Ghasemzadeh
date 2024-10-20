@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name / Site Title</h1>
+        <nav>
+            <a href="#bio">Biography</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <section id="bio">
+        <div class="sidebar">
+            <img src="images/your-image.jpg" alt="Your Sidebar Image">
+            <h2>Your Sidebar Name</h2>
+            <p>Short biography for the left-hand sidebar</p>
+            <ul>
+                <li>🌍 Earth</li>
+                <li>🏫 Red Brick University</li>
+                <li>📧 Email</li>
+                <li>🔗 Google Scholar | ORCID | PubMed</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- New Biography Section -->
+    <section id="biography">
+        <h2>Biography</h2>
+        <p>
+            This is where your main biography content goes. You can describe your academic background, research interests, work experience, achievements, and any other relevant details.
+        </p>
+        <p>
+            You can also include information about your current role, institutions you are affiliated with, and ongoing projects. This section gives visitors an insight into who you are and what you do.
+        </p>
+        <p>
+            Make sure to update this content with your actual biography. You can format this text as needed, including links to your work or academic profile.
+        </p>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-item">
+            <img src="images/publication-thumbnail.jpg" alt="Publication Thumbnail">
+            <div class="publication-details">
+                <h3>Publication Title</h3>
+                <p>Authors: Your Name, Co-author</p>
+                <div class="icons">
+                    <a href="pdf-link">PDF</a>
+                    <a href="doi-link">DOI</a>
+                    <a href="code-link">Code</a>
+                </div>
+            </div>
+        </div>
+        <!-- More publication items can go here -->
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <!-- Project with YouTube video -->
+        <div class="project-item">
+            <img src="images/project-thumbnail.jpg" alt="Project Thumbnail">
+            <div class="project-details">
+                <h3>Project Title 1</h3>
+                <div class="icons">
+                    <a href="code-link">Code</a>
+                </div>
+                <!-- YouTube Video Player -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Project with custom video -->
+        <div class="project-item">
+            <img src="images/project-thumbnail-2.jpg" alt="Project Thumbnail">
+            <div class="project-details">
+                <h3>Project Title 2</h3>
+                <div class="icons">
+                    <a href="code-link">Code</a>
+                </div>
+                <!-- Custom HTML5 Video Player -->
+                <video width="560" height="315" controls>
+                    <source src="videos/your-custom-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- More project items can go here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
