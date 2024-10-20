@@ -57,7 +57,7 @@ nav a:hover {
     background-color: var(--sidebar-bg-dark);  /* Default to dark mode sidebar */
     padding: 20px;
     position: fixed;
-    top: 100px;
+    top: 0;
     left: 0;
     height: calc(100% - 100px);
     overflow-y: auto;
