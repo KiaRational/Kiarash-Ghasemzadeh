@@ -9,18 +9,18 @@
 :root {
     --bg-color-light: #f7f7f7;
     --text-color-light: #000;
-    --bg-color-dark: #181818;
-    --text-color-dark: #fff;
+    --bg-color-dark: #f0f8f5;
+    --text-color-dark: #333333;
     --sidebar-bg-light: #d9eafa;  /* Light mode sidebar background */
-    --sidebar-bg-dark: #222;       /* Dark mode sidebar background */
+    --sidebar-bg-dark: #9dcf9d;       /* Dark mode sidebar background */
     --accent-color-light: #007bff;
-    --accent-color-dark: #9e79d1;
+    --accent-color-dark: #558b2f;
     --button-bg-light: #007bff;
-    --button-bg-dark: #9e79d1;
+    --button-bg-dark: #558b2f;
     --button-hover-bg-light: #0056b3;
     --button-hover-bg-dark: #6e49b8;
-    --button-text-light: #fff;
-    --button-text-dark: #fff;
+    --button-text-light: #333333;
+    --button-text-dark: #333333;
 }
 
 body {
