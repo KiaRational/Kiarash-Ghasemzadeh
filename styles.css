@@ -111,20 +111,13 @@ section p {
 }
 
 /* Publication and Project Styling */
-.publication-item,
-.project-item {
+/* Publication and project styling */
+.publication-item, .project-item {
     display: flex;
-    align-items: center;
     margin-bottom: 20px;
-    border: 1px solid var(--accent-dark);
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.publication-item img,
-.project-item img {
+.publication-item img, .project-item img {
     width: 120px;
     height: auto;
     margin-right: 20px;
@@ -132,13 +125,42 @@ section p {
     border-radius: 10px;
 }
 
-.publication-details,
-.project-details {
+.publication-details, .project-details {
     flex: 1;
 }
 
-.project-details h3,
-.publication-details h3 {
+.publication-details h3, .project-details h3 {
+    margin-bottom: 10px;
+}
+/* Project section styling */
+.project-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center align content */
+    margin-bottom: 30px;
+    border: 1px solid var(--accent-dark);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff; /* Optional background for better visual separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project image styling */
+.project-item img {
+    width: 250px; /* Consistent width for all images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px;
+    border: 2px solid var(--accent-dark);
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image fits nicely */
+}
+
+/* Project details styling */
+.project-details {
+    text-align: center; /* Center text alignment for consistency */
+}
+
+.project-details h3 {
     margin-bottom: 10px;
     font-size: 18px;
     color: var(--accent-dark);
