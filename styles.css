@@ -128,6 +128,44 @@ section p {
 .publication-details h3, .project-details h3 {
     margin-bottom: 10px;
 }
+/* Project section styling */
+.project-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center align content */
+    margin-bottom: 30px;
+    border: 1px solid var(--accent-dark);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff; /* Optional background for better visual separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project image styling */
+.project-item img {
+    width: 250px; /* Consistent width for all images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px;
+    border: 2px solid var(--accent-dark);
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image fits nicely */
+}
+
+/* Project details styling */
+.project-details {
+    text-align: center; /* Center text alignment for consistency */
+}
+
+.project-details h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--accent-dark);
+}
+
+.project-details p {
+    line-height: 1.6;
+    color: var(--text-dark);
+}
 
 /* Icons styling */
 .icons {
