@@ -22,6 +22,7 @@
     --button-hover-bg-dark: #33691e;
 }
 
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-dark);
@@ -49,9 +50,10 @@ nav a:hover {
 /* Container for sidebar and main content */
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-/* Sidebar styling */
+/* Sidebar Styling */
 .sidebar {
     width: 300px;
     background-color: var(--sidebar-bg-dark);
@@ -88,10 +90,11 @@ nav a:hover {
     text-align: center;
 }
 
-/* Main content styling */
+/* Main Content Styling */
 .main-content {
     margin-left: 320px;
     padding: 20px;
+    flex: 1;
 }
 
 section {
@@ -107,13 +110,21 @@ section p {
     line-height: 1.6;
 }
 
-/* Publication and project styling */
-.publication-item, .project-item {
+/* Publication and Project Styling */
+.publication-item,
+.project-item {
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
+    border: 1px solid var(--accent-dark);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.publication-item img, .project-item img {
+.publication-item img,
+.project-item img {
     width: 120px;
     height: auto;
     margin-right: 20px;
@@ -121,42 +132,13 @@ section p {
     border-radius: 10px;
 }
 
-.publication-details, .project-details {
+.publication-details,
+.project-details {
     flex: 1;
 }
 
-.publication-details h3, .project-details h3 {
-    margin-bottom: 10px;
-}
-/* Project section styling */
-.project-item {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;    /* Center align content */
-    margin-bottom: 30px;
-    border: 1px solid var(--accent-dark);
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #fff; /* Optional background for better visual separation */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Project image styling */
-.project-item img {
-    width: 250px; /* Consistent width for all images */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px;
-    border: 2px solid var(--accent-dark);
-    border-radius: 10px;
-    object-fit: cover; /* Ensure the image fits nicely */
-}
-
-/* Project details styling */
-.project-details {
-    text-align: center; /* Center text alignment for consistency */
-}
-
-.project-details h3 {
+.project-details h3,
+.publication-details h3 {
     margin-bottom: 10px;
     font-size: 18px;
     color: var(--accent-dark);
@@ -167,7 +149,7 @@ section p {
     color: var(--text-dark);
 }
 
-/* Icons styling */
+/* Icons Styling */
 .icons {
     display: flex;
     gap: 10px;
@@ -187,7 +169,7 @@ section p {
     color: white;
 }
 
-/* Toggle between light and dark mode */
+/* Light and Dark Mode Toggle */
 body.light-mode {
     background-color: var(--background-light);
     color: var(--text-light);
@@ -238,4 +220,75 @@ body.light-mode .toggle-switch {
 
 body.light-mode .toggle-switch:hover {
     background-color: var(--button-hover-bg-light);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .main-content {
+        margin-left: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid var(--accent-dark);
+        padding: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .publication-item,
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publication-item img,
+    .project-item img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .toggle-switch {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .publication-details,
+    .project-details {
+        text-align: center;
+    }
+
+    .project-details h3 {
+        font-size: 16px;
+    }
+
+    .project-details p {
+        font-size: 14px;
+    }
 }
