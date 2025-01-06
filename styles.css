@@ -130,10 +130,19 @@ ul.indented li {
 /* Publication and Project Styling */
 /* Publication and project styling */
 
-#clstr_globe {
-    width: 50px !important;  /* Adjust width */
-    height: 50px !important; /* Adjust height */
-}
+<style>
+  #globe-container {
+    width: 50px; /* Set your desired width */
+    height: 50px; /* Set your desired height */
+    overflow: hidden; /* Prevent overflow if the content is too large */
+  }
+
+  #globe-container canvas {
+    width: 100%; /* Ensure the globe adjusts to the container */
+    height: 100%;
+  }
+</style>
+
 .publication-item, .project-item {
     display: flex;
     margin-bottom: 20px;
