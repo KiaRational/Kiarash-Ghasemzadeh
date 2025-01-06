@@ -16,10 +16,6 @@
     --accent-dark: #33691e;
     --sidebar-bg-light: #ccf2cc;
     --sidebar-bg-dark: #a9d5a9;
-    --button-bg-light: #77dd77;
-    --button-bg-dark: #558b2f;
-    --button-hover-bg-light: #6ccf6c;
-    --button-hover-bg-dark: #33691e;
 }
 
 /* Global Styles */
@@ -74,9 +70,20 @@ nav a:hover {
     border-radius: 50%;
 }
 
-.sidebar h2 {
-    margin-top: 15px;
+.sidebar-text {
     text-align: center;
+}
+
+.sidebar-text h2 {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.sidebar-text p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .sidebar ul {
@@ -108,8 +115,18 @@ section h2 {
 
 section p {
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
+/* Indented list styling */
+ul.indented {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul.indented li {
+    margin-bottom: 10px;
+}
 /* Publication and Project Styling */
 /* Publication and project styling */
 .publication-item, .project-item {
