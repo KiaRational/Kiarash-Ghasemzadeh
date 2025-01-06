@@ -129,6 +129,11 @@ ul.indented li {
 }
 /* Publication and Project Styling */
 /* Publication and project styling */
+
+#clstr_globe {
+    width: 50px !important;  /* Adjust width */
+    height: 50px !important; /* Adjust height */
+}
 .publication-item, .project-item {
     display: flex;
     margin-bottom: 20px;
